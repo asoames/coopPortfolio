@@ -1,0 +1,37 @@
+body{
+  margin: 1rem;
+}
+
+.logo{
+  max-height: 4rem;
+}
+
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+  color: white;
+}
+
+/*--------------------------*/
+
+.gamePanel{
+  display: block;
+}
+
+button{
+  display: block;
+}
+
+canvas {
+  border:1px solid #d3d3d3;
+  background-color: #f1f1f1;
+}
