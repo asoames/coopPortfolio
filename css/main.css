@@ -28,10 +28,22 @@ body{
 }
 
 button{
-  display: block;
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  width: 238px;
 }
 
 canvas {
   border:1px solid #d3d3d3;
   background-color: #f1f1f1;
+
+  left: 250px;
+  top: 250px;
 }

@@ -3,19 +3,19 @@ var myObstacles = [];
 var myScore;
 
 function startGame(canX, canY) {
-    myGamePiece = new component(30, 30, "red", 100, 120); 
+    myGamePiece = new component(30, 30, "black", 100, 120); 
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("30px", "Consolas", "blue", 280, 40, "text");
     myGameArea.start();
 }
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 480; 
+        this.canvas.height = 270; 
         this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]); 
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
         },
@@ -93,8 +93,8 @@ function updateGameArea() {
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "green", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        myObstacles.push(new component(10, height, "black", x, 0));
+        myObstacles.push(new component(10, x - height - gap, "black", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
