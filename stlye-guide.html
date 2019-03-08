@@ -14,14 +14,7 @@
 
     <body>
         <header>
-            <div class="logo-frame">
-                <a href="styleGuide.html"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
-            </div>
-
-            <div class="toggle" id="menu-toggle">
-                <div class="toggle-bar"></div>
-            </div>
-
+            <h1 class="nav-title">Alex Soames Portfolio | Style Guide</h1>
             <div class="nav" id="menu">
                 <nav class="main-nav">
                     <a href="#interactive_elements" class='nav-button'>Interactive Elements</a>
@@ -34,23 +27,13 @@
                     <a href="#citations" class='nav-button'>Citations</a>
                 </nav>
             </div>
-            <script src="js/hamburger.js"></script>
-
-            <h1 class="nav-title">P02 - Newegg Canada Style Guide - Group 12</h1>
         </header>
 
-
-
-        <!-- INTERACTIVE ELEMENTS SECTION // -->
         <section id="interactive_elements">
             <h2>Interactive Elements</h2>
 
-
             <section class="element">
                 <h3>In-text link</h3>
-
-                <h4>CSS selector:</h4>
-                <p>.link</p>
 
                 <h4>Sample code:</h4>
                 <code>
@@ -61,14 +44,9 @@
                 <p>This is an example paragraph with an <a class="link" href="#">in-text link</a>.</p>
             </section>
 
-
-            <!-- Default Button styling section -->
             <section class="element">
 
                 <h3>Navigation Link</h3>
-
-                <h4>CSS selector:</h4>
-                <p>.nav-button</p>
 
                 <h4>Sample code:</h4>
                 <code>
@@ -80,84 +58,8 @@
 
             </section>
 
-
-            <section class="element">
-                <h3>Submit/Reset Buttons</h3>
-
-                <h4>CSS selector:</h4>
-                <p>.nav-button</p>
-
-                <h4>Sample code:</h4>
-                <code>
-                    &lt;input class="nav-button form-button" type="submit" value="Submit"&gt;<br>
-                    &lt;input class="nav-button" type="reset" value="Reset"&gt;
-                </code>
-
-                <h4>Rendered element:</h4>
-                <input class="nav-button form-button" type="submit" value="Submit">
-                <input class="nav-button" type="reset" value="Reset">
-            </section>
-
-
-            <section class="element">
-                <h3>Text Input Field with Label</h3>
-
-                <h4>CSS selector:</h4>
-                <p>label[for="input-text"]</p>
-                <p>#input-text</p>
-
-                <h4>Sample code:</h4>
-                <code>
-                    &lt;label for="input-text"&gt;Label:&lt;/label&gt;<br>
-                    &lt;input type="text" name="input-text" id="input-text" placeholder="Placeholder Text"&gt;
-                </code>
-
-                <h4>Rendered element:</h4>
-                <label for="input-text">Label:</label>
-                <input type="text" name="input-text" id="input-text">
-            </section>
-
-
-            <section class="element">
-                <h3>Drop-down List with Label</h3>
-
-                <h4>CSS selector:</h4>
-                <p>#option1</p>
-                <p>label[for="option1"]</p>
-                <p>#option2</p>
-                <p>label[for="2"]</p>
-
-                <h4>Sample code:</h4>
-                <code>
-                    &lt;form class="form-payment"&gt;<br>
-                    &lt;label for="cc-type"&gt;Credit Card:&lt;/label&gt;<br>
-                    &lt;select name="cc-type" id="cc-type"&gt;<br>
-                    &lt;option value="MC"&gt;Mastercard&lt;/option&gt;<br>
-                    &lt;option value="V"&gt;Visa&lt;/option&gt;<br>
-                    &lt;option value="AMEX"&gt;American Express&lt;/option&gt;<br>
-                    &lt;option value="O"&gt;Other&lt;/option&gt;<br>
-                    &lt;/select&gt;
-                    &lt;/form&gt;
-                </code>
-
-                <h4>Rendered element:</h4>
-                <form class="form-payment">
-                    <label for="cc-type">Credit Card:</label>
-                    <select name="cc-type" id="cc-type">
-                        <option value="MC">Mastercard</option>
-                        <option value="V">Visa</option>
-                        <option value="AMEX">American Express</option>
-                        <option value="O">Other</option>
-                    </select>
-                </form>
-            </section>
-
-
             <section class="element">
                 <h3>Image as a Link</h3>
-
-                <h4>CSS selector:</h4>
-                <p>#logo</p>
 
                 <h4>Sample code:</h4>
                 <code>
@@ -165,27 +67,16 @@
                 </code>
 
                 <h4>Rendered element:</h4>
-                <a href="https://www.newegg.ca/"><img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"></a>
+                <a href="https://www.soames.ca/"><img src="img/as-logo.png" class="logo" alt="Alex Soames Logo"></a>
             </section>
 
-
         </section>
-        <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-
-
-        <!-- TEXT ELEMENTS SECTION // -->
         <section id="text_elements">
             <h2>Text Elements</h2>
 
             <section class="element">
                 <h3>Headings</h3>
-
-                <h4>CSS selector:</h4>
-                <p>h1</p>
-                <p>h2</p>
-                <p>h3</p>
-                <p>h4</p>
 
                 <h4>Sample code:</h4>
                 <code>
@@ -205,9 +96,6 @@
             <section class="element">
                 <h3>Paragraphs</h3>
 
-                <h4>CSS selector:</h4>
-                <p>p</p>
-
                 <h4>Sample code:</h4>
                 <code>
                     &lt;p&gt;This is an example paragraph.&lt;/p&gt;
@@ -215,30 +103,6 @@
 
                 <h4>Rendered element:</h4>
                 <p>This is an example paragraph.</p>
-            </section>
-
-            <section class="element">
-                <h3>Numbered Lists</h3>
-
-                <h4>CSS selector:</h4>
-                <p>.list-num</p>
-                <p>.list-num li</p>
-
-                <h4>Sample code:</h4>
-                <code>
-                    &lt;ol class="list-num"&gt;<br>
-                    &lt;li&gt;List Item 1&lt;/li&gt;<br>
-                    &lt;li&gt;List Item 2&lt;/li&gt;<br>
-                    &lt;li&gt;List Item 3&lt;/li&gt;<br>
-                    &lt;/ol&gt;
-                </code>
-
-                <h4>Rendered element:</h4>
-                <ol class="list-num">
-                    <li>List Item 1</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
-                </ol>
             </section>
 
         </section>
@@ -249,9 +113,9 @@
             <h3>Fonts</h3>
 
             <h3>Color Palette</h3>
-            <div class="colour1"><p class="colour">rgb(25, 25, 112) || hex: #191970</p></div>
-            <div class="colour2"><p class="colour">rgb(0, 121, 202) || hex: #0079CA</p></div>
-            <div class="colour3"><p class='colour'>rgb(246, 246, 246) || hex: #F6F6F6</p></div>
+            <div class="c-red"><p class="colour">#8C0000</p></div>
+            <div class="c-notBlack"><p class="colour">#2C2F33</p></div>
+            <div class="colour3"><p class='colour'>#F6F6F6</p></div>
 
             <h3>Art Direction</h3>
 
