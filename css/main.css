@@ -22,7 +22,8 @@
 }
 
 .pro-name{
-	display: none;
+	/*display: none;*/
+    opacity: 0;
     color: #0079ca;
     text-align: center;
     margin: auto;
@@ -32,6 +33,10 @@
     max-height: 240px;
     width: 100%;
     object-fit: contain;
+}
+
+.pro-img:hover .pro-name {
+    opacity: 1;
 }
 
 .pro a:hover, .pro a:focus{
