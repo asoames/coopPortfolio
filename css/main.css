@@ -2,5 +2,41 @@
     max-width: 50%;
 }
 
-/*------------------------------------*/
+.pro-list{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pro{
+    min-width: 200px;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-grow: 0;
+    flex-basis: 29%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-name{
+	display: none;
+    color: #0079ca;
+    text-align: center;
+    margin: auto;
+}
+
+.pro-image img{
+    max-height: 240px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.pro a:hover, .pro a:focus{
+    opacity: 0.50;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
 
