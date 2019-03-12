@@ -6,10 +6,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stlye Guide</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <link href="css/normalize.css" rel="stylesheet" >
-        <!-- <link href="css/main.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/hover.css">
+        <link rel="stylesheet" href="css/flex.css">
         <link rel="stylesheet" href="css/fonts.css">
 
         <link rel="icon" href="img/as-logo.png">
@@ -120,6 +123,105 @@
 
         </section>
 
+        <section id="navi">
+            <h3>Navigation</h3>
+            <h4>Sample code:</h4>
+            <code><pre>
+                &lt;nav&gt;
+                    &lt;/div class="nav-right"&gt;
+                        &lt;div class="nav-button"&gt;
+                            &lt;a class="nav-a" href="index.html"&gt;Home&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="nav-button"&gt;
+                            &lt;a class="nav-a" href="about.html"&gt;About&lt;/a&gt;
+                        &lt;/div>
+                    &lt;/div>              
+                    
+                    &lt;div class="nav-logo"&gt;
+                        &lt;a class="nav-a" href="stlye-guide.html"&gt;
+                            &lt;img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" /&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+
+                    &lt;/div class="nav-left"&gt;
+                        &lt;div class="nav-button"&gt;
+                            &lt;a class="nav-a" href="#projects">Projects&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class="nav-button"&gt;
+                            &lt;a class="nav-a" href="resume.html">Resume&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;div&gt;
+                &lt;/nav&gt;
+            </pre></code>
+            <nav>
+                </div class="nav-right">
+                    <div class="nav-button">
+                        <a class="nav-a" href="index.html">Home</a>
+                    </div>
+                    <div class="nav-button">
+                        <a class="nav-a" href="about.html">About</a>
+                    </div>
+                </div>              
+                
+                <div class="nav-logo">
+                    <a class="nav-a" href="stlye-guide.html">
+                        <img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" />
+                    </a>
+                </div>
+
+                </div class="nav-left">
+                    <div class="nav-button">
+                        <a class="nav-a" href="#projects">Projects</a>
+                    </div>
+                    <div class="nav-button">
+                        <a class="nav-a" href="resume.html">Resume</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section id="projects-ex">
+            <h3>Projects Preview</h3>
+            <h4>Sample code:</h4>
+            <code><pre>
+                &lt;div class="flex-container"&gt;
+                    &lt;div class="pro-holder"&gt;
+                        &lt;a href="px.html"&gt;
+                            &lt;figure class="pro"&gt;
+                                &lt;img class="preview" src="img/px.png"&gt;
+                                &lt;figcaption class="pro-name"&gt;
+                                    &lt;h5&gt;Project X - Name X&lt;/h5&gt;   
+                                &lt;/figcaption&gt;
+                            &lt;/figure&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </pre></code>
+            <div class="flex-container">
+                <div class="pro-holder">
+                    <a href="p1.html">
+                        <figure class="pro">
+                            <img class="preview" src="img/p1.png">
+                            <figcaption class="pro-name">
+                                <h5>Project 1 - Name 1</h5>    
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="pro-holder">
+                    <a href="p2.html">
+                        <figure class="pro">
+                            <img class="preview" src="img/p2.png">
+                            <figcaption class="pro-name">
+                                <h5>Project 2 - Name 2</h5>    
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>  
+
         <section id="identity">
             <h2>Brand Identity</h2>
 
@@ -130,7 +232,7 @@
             <div class="c-notBlack"><p class="colour">#2C2F33</p></div>
             <div class="colour3"><p class='colour'>#F6F6F6</p></div>
 
-            <h3>Art Direction</h3>
+            <!-- <h3>Art Direction</h3> -->
 
         </section>
     </body>
