@@ -3,10 +3,9 @@
   flex-wrap: wrap;
 }
 
-.flex-container > .pro-holder{
-  width: 400px;
+.pro-holder img{
+  height: 200px;
+  width: auto;
   margin: 10px;
   text-align: center;
-/*  line-height: 75px;
-  font-size: 30px;*/
 }
