@@ -44,6 +44,8 @@ header{
     transition-duration: 0.5s;
     font-size: 0.875rem;
     font-weight: bold;
+
+    text-align: center;
 }
 
 .nav-logo:hover, .nav-logo:focus{
@@ -51,7 +53,12 @@ header{
 }
 
 nav{
-	margin: auto;
-	width: 50%;
+/*	margin: auto;
+	width: 50%;*/
+    text-align: center;
+}
+
+.nav-container{
+    
 }
 
