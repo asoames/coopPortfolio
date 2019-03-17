@@ -1,3 +1,8 @@
+body {
+    margin: auto;
+    padding: 0.5rem;
+}
+
 .artifact{
     max-width: 50%;
 }
@@ -5,4 +10,52 @@
 #intro{
 	padding-left: 2rem;
 	text-align: center;
+}
+
+.colour {
+    margin: 0;
+}
+
+.c-red{
+	display: block;
+	background-color: #8C0000;
+	color: white;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.c-notBlack{
+	display: block;
+	background-color: #2C2F33;
+	color: white;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.colour3{
+	display: block;
+	background-color: #000;
+	color: white;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    padding: 2rem 0;
+    text-align: center
+}
+
+code {
+    background-color: #F6F6F6;
+    padding: 0.5rem;
+    display: block;
+    font-size: 0.75rem;
+}
+
+.img-link{
+	
 }

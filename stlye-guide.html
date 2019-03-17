@@ -20,7 +20,6 @@
 
     <body>
         <header>
-            <h1 class="nav-title">Alex Soames Portfolio | Style Guide</h1>
             <div id="menu">
                 <nav>
                     <div class="nav-button">
@@ -45,6 +44,8 @@
             </div>
         </header>
 
+        <h1 class="nav-title style-header">Alex Soames Portfolio | Style Guide</h1>
+
         <section id="interactive_elements">
             <h2>Interactive Elements</h2>
 
@@ -55,9 +56,13 @@
                 <code>
                     &lt;p&gt;This is an example paragraph with an &lt;a href="#" class="link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;
                 </code>
+                <h4>CSS selector:</h4>
+                <code>
+                    &lt;a&gt;
+                </code>
 
                 <h4>Rendered element:</h4>
-                <p>This is an example paragraph with an <a class="link" href="#">in-text link</a>.</p>
+                <p>This is an example paragraph with an <a href="#">in-text link</a>.</p>
             </section>
 
             <section class="element">
@@ -67,6 +72,11 @@
                 <h4>Sample code:</h4>
                 <code>
                     &lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;
+                </code>
+                <h4>CSS selector:</h4>
+                <code>
+                    &lt;a&gt; <br>
+                    .nav-button
                 </code>
 
                 <h4>Rendered element:</h4>
@@ -81,9 +91,15 @@
                 <code>
                     &lt;a href="#"&gt;&lt;img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"&gt;&lt;/a&gt;
                 </code>
+                <h4>CSS selector:</h4>
+                <code>
+                    &lt;a&gt; <br>
+                    &lt;img&gt; <br>
+                    .img-link
+                </code>
 
                 <h4>Rendered element:</h4>
-                <a href="https://www.soames.ca/"><img src="img/as-logo.png" class="logo" alt="Alex Soames Logo"></a>
+                <a href="https://www.soames.ca/"><img src="img/as-logo.png" class="img-link" alt="Alex Soames Logo"></a>
             </section>
 
         </section>
@@ -96,14 +112,21 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;h1 class="nav-title"&gt;Heading 1&lt;/h1&gt;<br>
+                    &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
                     &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
                     &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
                     &lt;h4&gt;Heading 4&lt;/h4&gt;
                 </code>
+                <h4>CSS selector:</h4>
+                <code>
+                    &lt;h1&gt; <br>
+                    &lt;h2&gt; <br>
+                    &lt;h3&gt; <br>
+                    &lt;h4&gt; <br>
+                </code>
 
                 <h4>Rendered element:</h4>
-                <h1 class="nav-title">Heading 1</h1>
+                <h1>Heading 1</h1>
                 <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
                 <h4>Heading 4</h4>
@@ -116,6 +139,10 @@
                 <code>
                     &lt;p&gt;This is an example paragraph.&lt;/p&gt;
                 </code>
+                <h4>CSS selector:</h4>
+                <code>
+                    &lt;p&gt; <br>   
+                </code>
 
                 <h4>Rendered element:</h4>
                 <p>This is an example paragraph.</p>
@@ -127,32 +154,44 @@
             <h3>Navigation</h3>
             <h4>Sample code:</h4>
             <code><pre>
-                &lt;nav&gt;
-                    &lt;/div class="nav-right"&gt;
-                        &lt;div class="nav-button"&gt;
-                            &lt;a class="nav-a" href="index.html"&gt;Home&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="nav-button"&gt;
-                            &lt;a class="nav-a" href="about.html"&gt;About&lt;/a&gt;
-                        &lt;/div>
-                    &lt;/div>              
-                    
-                    &lt;div class="nav-logo"&gt;
-                        &lt;a class="nav-a" href="stlye-guide.html"&gt;
-                            &lt;img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" /&gt;
-                        &lt;/a&gt;
-                    &lt;/div&gt;
+&lt;nav&gt;
+    &lt;/div class="nav-right"&gt;
+        &lt;div class="nav-button"&gt;
+            &lt;a class="nav-a" href="index.html"&gt;Home&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-button"&gt;
+            &lt;a class="nav-a" href="about.html"&gt;About&lt;/a&gt;
+        &lt;/div>
+    &lt;/div>              
+    
+    &lt;div class="nav-logo"&gt;
+        &lt;a class="nav-a" href="stlye-guide.html"&gt;
+            &lt;img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" /&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
 
-                    &lt;/div class="nav-left"&gt;
-                        &lt;div class="nav-button"&gt;
-                            &lt;a class="nav-a" href="#projects">Projects&lt;/a&gt;
-                        &lt;/div&gt;
-                        &lt;div class="nav-button"&gt;
-                            &lt;a class="nav-a" href="resume.html">Resume&lt;/a&gt;
-                        &lt;/div&gt;
-                    &lt;div&gt;
-                &lt;/nav&gt;
+    &lt;/div class="nav-left"&gt;
+        &lt;div class="nav-button"&gt;
+            &lt;a class="nav-a" href="#projects">Projects&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-button"&gt;
+            &lt;a class="nav-a" href="resume.html">Resume&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;div&gt;
+&lt;/nav&gt;
             </pre></code>
+            <h4>CSS selector:</h4>
+            <code>
+                &lt;nav&gt; <br>   
+                .nav-right <br>
+                .nav-left <br>
+                .nav-button <br>
+                .nav-a <br>
+                .nav-logo 
+            </code>
+
+            <h4>Rendered element:</h4>
+
             <nav>
                 </div class="nav-right">
                     <div class="nav-button">
@@ -184,19 +223,30 @@
             <h3>Projects Preview</h3>
             <h4>Sample code:</h4>
             <code><pre>
-                &lt;div class="flex-container"&gt;
-                    &lt;div class="pro-holder"&gt;
-                        &lt;a href="px.html"&gt;
-                            &lt;figure class="pro"&gt;
-                                &lt;img class="preview" src="img/px.png"&gt;
-                                &lt;figcaption class="pro-name"&gt;
-                                    &lt;h5&gt;Project X - Name X&lt;/h5&gt;   
-                                &lt;/figcaption&gt;
-                            &lt;/figure&gt;
-                        &lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+&lt;div class="flex-container"&gt;
+    &lt;div class="pro-holder"&gt;
+        &lt;a href="px.html"&gt;
+            &lt;figure class="pro"&gt;
+                &lt;img class="preview" src="img/px.png"&gt;
+                &lt;figcaption class="pro-name"&gt;
+                    &lt;h5&gt;Project X - Name X&lt;/h5&gt;   
+                &lt;/figcaption&gt;
+            &lt;/figure&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </pre></code>
+            <h4>CSS selector:</h4>
+            <code>
+                .flex-container <br>
+                .pro-holder <br>
+                .pro <br>
+                .preview <br>
+                .pro-name 
+            </code>
+
+            <h4>Rendered element:</h4>
+
             <div class="flex-container">
                 <div class="pro-holder">
                     <a href="p1.html">
@@ -226,14 +276,12 @@
             <h2>Brand Identity</h2>
 
             <h3>Fonts</h3>
+            <p>Body text is styled using the font Open Sans</p>
 
             <h3>Color Palette</h3>
             <div class="c-red"><p class="colour">#8C0000</p></div>
             <div class="c-notBlack"><p class="colour">#2C2F33</p></div>
             <div class="colour3"><p class='colour'>#F6F6F6</p></div>
-
-            <!-- <h3>Art Direction</h3> -->
-
         </section>
     </body>
 </html>
