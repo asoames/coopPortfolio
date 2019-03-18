@@ -1,3 +1,7 @@
+'use strict';
+
+console.log('Games is running.');
+
 var myGamePiece;
 var myObstacles = [];
 var myScore;
