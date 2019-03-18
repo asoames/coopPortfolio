@@ -16,7 +16,7 @@ p{
     height: 100%;
 }
 
-#intro{
+.p-title{
 	padding-left: 2rem;
 	text-align: center;
 }
