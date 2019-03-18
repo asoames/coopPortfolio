@@ -10,3 +10,21 @@
   width: auto;
   margin: 10px;
 }
+
+/*-------------------------------------------*/
+
+.flex-container-p{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.flex-item{
+  width: 48.5%;
+  height: auto;
+  margin: 0.5rem;
+  /*flex-grow: 1;*/
+  flex-direction: 1;
+}
+
