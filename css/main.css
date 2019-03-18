@@ -78,5 +78,9 @@ code {
 }
 
 .cst-list{
-    
+
+}
+
+.sub-list{
+    list-style-type: lower-alpha;
 }
