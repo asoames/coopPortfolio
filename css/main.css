@@ -84,3 +84,11 @@ code {
 .sub-list{
     list-style-type: lower-alpha;
 }
+
+.nav-title{
+    text-align: center;
+}
+
+.p-all-title{
+    text-align: center;
+}
