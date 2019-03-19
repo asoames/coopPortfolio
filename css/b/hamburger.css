@@ -1,0 +1,89 @@
+/*Added the hamburger as a diffrent css file to
+more easily organize the style for it*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+.nav-title{
+    margin: auto;
+    text-align: center;
+}
+
+.toggle{
+    display: none;
+    user-select: none;
+    cursor: pointer;
+    height: 2rem;
+    right: 2rem;
+    position: absolute;
+    top: 2rem;
+    width: 2.5rem;
+    z-index: 2;
+}
+
+.toggle.style-guide{
+    position: relative;
+    right: 0;
+    top: 0;
+    float: right;
+    margin: 0;
+}
+
+.toggle:hover{
+    opacity: 0.8;
+}
+.toggle .toggle-bar,
+.toggle .toggle-bar::after,
+.toggle .toggle-bar::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    background: #191970;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
+}
+.toggle .toggle-bar{
+    margin-top: 0;
+}
+.toggle .toggle-bar::after{
+    margin-top: 0.8rem;
+
+}
+.toggle .toggle-bar::before{
+    margin-top: -0.8rem;
+}
+.toggle.expanded .toggle-bar{
+    background: transparent;
+}
+.toggle.expanded .toggle-bar::after, .toggle.expanded .toggle-bar::before{
+    background: #191970;
+    margin-top: 0;
+}
+.toggle.expanded .toggle-bar::after{
+    transform: rotate(45deg);
+}
+.toggle.expanded .toggle-bar::before{
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 40rem){
+    .main-nav{
+        display: block;
+        float: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .toggle{
+        display: block;
+    }
+}
