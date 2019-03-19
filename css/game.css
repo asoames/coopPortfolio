@@ -1,8 +1,10 @@
 .g-header{
   /*display: none;*/
+}
+
+canvas{
   position: fixed;
-  /*left: 0;*/
-  top: 0;
+  top: 115px;
 }
 
 body{
