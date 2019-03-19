@@ -6,5 +6,6 @@ $(document).ready(function() {
     $('#contact-form').hide();
     $('#button-to-show').on('click', function() {
         $('#contact-form').toggle();
+        $('#button-to-show').toggle();
     });
 })
