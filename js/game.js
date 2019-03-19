@@ -1,12 +1,12 @@
-'use strict';
+// 'use strict';
 
-console.log('Games is running.');
+console.log('Game is running');
 
 var myGamePiece;
 var myObstacles = [];
 var myScore;
 
-function startGame(canX, canY) {
+function startGame() { //canX, canY
     myGamePiece = new component(30, 30, "black", 100, 120); 
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "blue", 280, 40, "text");
