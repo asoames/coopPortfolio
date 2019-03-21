@@ -1,7 +1,6 @@
-.game-show{
+/*.game-show{
     display: none;
-}
-
+}*/
 body {
     margin: auto;
     padding: 0.5rem;
@@ -9,6 +8,10 @@ body {
 
 p{
 	word-wrap: break-word;
+}
+
+p.p-limit{
+    max-width: 60rem;
 }
 
 .artifact-img{
