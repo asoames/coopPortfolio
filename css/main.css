@@ -1,6 +1,7 @@
-/*.game-show{
+.game-show{
     display: none;
-}*/
+}
+
 body {
     margin: auto;
     padding: 0.5rem;
