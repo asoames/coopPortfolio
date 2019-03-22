@@ -19,27 +19,27 @@
 
 	<body>
 		<header>
-				<nav>
-						<div class="nav-button">
-							<a class="nav-a" href="index.html">Home</a>
-						</div>
-						<div class="nav-button">
-							<a class="nav-a" href="about.html">About</a>
-						</div>
-					
-					<div class="nav-logo">
-						<a class="nav-a" href="index.html">
-							<img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" />
-						</a>
-					</div>
+			<nav>
+				<div class="nav-button">
+					<a class="nav-a" href="index.html">Home</a>
+				</div>
+				<div class="nav-button">
+					<a class="nav-a" href="about.html">About</a>
+				</div>
+			
+			<div class="nav-logo">
+				<a class="nav-a" href="index.html">
+					<img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" />
+				</a>
+			</div>
 
-						<div class="nav-button">
-							<a class="nav-a" href="p-all.html">Projects</a>
-						</div>
-						<div class="nav-button">
-							<a class="nav-a" href="resume.html">Resume</a>
-						</div>
-				</nav>
+				<div class="nav-button">
+					<a class="nav-a" href="p-all.html">Projects</a>
+				</div>
+				<div class="nav-button">
+					<a class="nav-a" href="resume.html">Resume</a>
+				</div>
+			</nav>
 		</header>
 
 		<section>
@@ -74,14 +74,17 @@
 			 <div class="container p-limit">
 				  <form action="action_page.php">
 
-				    <label for="fname">First Name</label>
-				    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				    <label for="name">Name</label>
+				    <input type="text" id="name" name="name" placeholder="Your name...">
 
-				    <label for="lname">Last Name</label>
-				    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				    <label for="email">Email</label>
+				    <input type="text" id="email" name="email" placeholder="Your email...">
 
 				    <label for="subject">Subject</label>
-				    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				    <input type="text" id="subject" name="subject" placeholder="Subject...">
+
+				    <label for="message">Message</label>
+				    <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
 
 				    <input type="submit" value="Submit">
 
