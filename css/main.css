@@ -101,3 +101,8 @@ code {
     text-align: center;
 }
 
+.border-red{
+    border-style: solid; 
+    border-color: #8C0000;
+    border-radius: 10px;
+}
