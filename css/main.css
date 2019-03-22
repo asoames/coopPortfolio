@@ -11,7 +11,7 @@ p{
 	word-wrap: break-word;
 }
 
-p.p-limit{
+.p-limit{
     max-width: 60rem;
 }
 
