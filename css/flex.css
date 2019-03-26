@@ -30,21 +30,6 @@
   flex-direction: 1;
 }
 
-.img-l{
-  order: 1;
-}
-.img-r{
-  order: 2;
-}
-.p-l{
-  order: 1;
-}
-.p-r{
-  order: 2;
-}
-
-
-
 @media screen and (max-width: 68.5rem){
   .flex-item{
     width: 90%;
@@ -59,10 +44,10 @@
     order: 2;
   }
   .p-l{
-    order: 1;
+    order: -1;
   }
   .p-r{
-    order: 1;
+    order: -1;
   }
 
 }
