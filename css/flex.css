@@ -30,6 +30,39 @@
   flex-direction: 1;
 }
 
-@media screen and (max-width: 40rem){
+.img-l{
+  order: 1;
+}
+.img-r{
+  order: 2;
+}
+.p-l{
+  order: 1;
+}
+.p-r{
+  order: 2;
+}
+
+
+
+@media screen and (max-width: 68.5rem){
+  .flex-item{
+    width: 90%;
+  }
+  .flex-container-p{
+    justify-content: center;
+  }
+  .img-l{
+    order: 2;
+  }
+  .img-r{
+    order: 2;
+  }
+  .p-l{
+    order: 1;
+  }
+  .p-r{
+    order: 1;
+  }
 
 }
