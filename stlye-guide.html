@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Add CSS selectors!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <head>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Stlye Guide</title>
+        <title>Style Guide</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -14,7 +13,7 @@
         <link rel="stylesheet" href="css/hover.css">
         <link rel="stylesheet" href="css/flex.css">
         <link rel="stylesheet" href="css/fonts.css">
-
+        <link rel="stylesheet" href="css/unique.css">
         <link rel="icon" href="img/as-logo.png">
     </head>
 
@@ -53,15 +52,20 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;p&gt;This is an example paragraph with an &lt;a href="#" class="link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;
+                    &lt;div class="red-bg"&gt;<br>
+                        &lt;p&gt;This is an example paragraph with an &lt;a href="#" class="link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;<br>
+                    &lt;/div&gt;
                 </code>
                 <h4>CSS selector:</h4>
                 <code>
-                    &lt;a&gt;
+                    &lt;a&gt;<br>
+                    .red-bg
                 </code>
 
                 <h4>Rendered element:</h4>
-                <p>This is an example paragraph with an <a href="#">in-text link</a>.</p>
+                <div class="red-bg">
+                    <p>This is an example paragraph with an <a href="#">in-text link</a>.</p>
+                </div>
             </section>
 
             <section class="element">
