@@ -128,7 +128,7 @@ code {
     opacity: 0.8;
 }
 
-figure{
+figure.artifact{
     margin: 0;
     padding: 0;
     border: 0;
