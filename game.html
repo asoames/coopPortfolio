@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Fun!</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/game.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="icon" href="img/duder5000LogoPNG.png">
+
+		<script src="js/game.js" class="gamePanel"></script>
+	</head>
+
+	<body onload="startGame()"> 
+		<header class="g-header">
+			<nav>
+					<!-- </div class="nav-right"> -->
+						<div class="nav-button">
+							<a class="nav-a" href="index.html">Home</a>
+						</div>
+						<div class="nav-button">
+							<a class="nav-a" href="about.html">About</a>
+						</div>
+					<!-- </div> -->
+					
+					<div class="nav-logo">
+						<a class="nav-a" href="index.html">
+							<img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" />
+						</a>
+					</div>
+
+					<!-- </div class="nav-left"> -->
+						<div class="nav-button">
+							<a class="nav-a" href="p-all.html">Projects</a>
+						</div>
+						<div class="nav-button">
+							<a class="nav-a" href="resume.html">Resume</a>
+						</div>
+					<!-- </div> -->
+				</nav>
+		</header>
+
+		<section id="buttons">
+	        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">JUMP!!!</button>
+	        <button value="Refresh Page" onClick="window.location.reload()">Reset</button>
+
+			<h2>Yup! That's a game alright.</h2>
+		</section>
+
+	</body>
+	<footer>
+		<p>Link to <a href="stlye-guide.html">stlye guide</a></p>
+	</footer>
+</html>
