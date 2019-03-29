@@ -128,6 +128,12 @@ code {
     opacity: 0.8;
 }
 
+figure{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 /*HOVER*/
 
 .pro{
