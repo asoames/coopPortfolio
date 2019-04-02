@@ -1,8 +1,8 @@
 .tri{
-	height: 7rem;
+	height: 5rem;
 	width: auto;
-	position: absolute;
-	top:30%;
+	/*position: absolute;*/
+	/*top:30%;*/
 	transform: rotate(-90deg);
 	display: inline;
 }
