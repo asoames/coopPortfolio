@@ -86,9 +86,9 @@ code {
     list-style-type: lower-alpha;
 }
 
-.nav-title{
+/*.nav-title{
     text-align: center;
-}
+}*/
 
 .p-all-title{
     text-align: center;
@@ -146,7 +146,6 @@ figure.artifact{
 
 .logo-image{
     height: 4rem;
-    /*background-color: none;*/
 }
 
 header{
@@ -201,13 +200,7 @@ header{
 }
 
 nav{
-/*  margin: auto;
-    width: 50%;*/
     text-align: center;
-}
-
-.nav-container{
-    
 }
 
 @media screen and (max-width: 40rem){
