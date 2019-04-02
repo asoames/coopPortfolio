@@ -196,8 +196,8 @@ header{
 }
 
 .nav-button:hover, .nav-button:focus{
-    /*opacity: 0.75;*/
-    background-color: #CD0000;
+    opacity: 0.6;
+    /*background-color: #CD0000;*/
 }
 
 .nav-a{
