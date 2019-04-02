@@ -13,11 +13,7 @@
 }
 
 .pro:hover .pro-name{
-    opacity: 0.5;
-}
-
-.pro:hover .pro-name-alt{
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .pro-name{
@@ -40,7 +36,8 @@
         text-align: center;
     }
 
-h3.timeframe{
+
+/*h3.timeframe{
     color: #8C0000;
     margin: 0;
     border: 0;
@@ -51,4 +48,4 @@ h3.timeframe{
 
 p.timeframe{
     margin-top: 0.2rem;
-}
+}*/

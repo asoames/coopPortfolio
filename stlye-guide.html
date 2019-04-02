@@ -7,6 +7,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hover.css">
+        <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/flex.css">
         <link rel="stylesheet" href="css/fonts.css">
 
@@ -16,7 +18,7 @@
     <body>
         <header>
             <div id="menu">
-                <h1 class="nav-title style-header">Alex Soames Portfolio | Style Guide</h1>
+                <a href="index.html" class="link-out-intext"><h1 class="nav-title style-header p-title">Alex Soames Portfolio | Style Guide</h1></a>
                 <nav>
                     <div class="nav-button">
                         <a class="nav-a" href="#interactive_elements">Interactive Elements</a>
@@ -48,20 +50,16 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;div class="red-bg"&gt;<br>
-                        &lt;p&gt;This is an example paragraph with an &lt;a href="#" class="link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;<br>
-                    &lt;/div&gt;
+                    &lt;p&gt;This is an example paragraph with an &lt;a href="#" class="link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;<br>
                 </code>
                 <h4>CSS selector:</h4>
                 <code>
                     &lt;a&gt;<br>
-                    .red-bg
+                    .link-out-intext
                 </code>
 
                 <h4>Rendered element:</h4>
-                <div class="red-bg">
-                    <p>This is an example paragraph with an <a href="#">in-text link</a>.</p>
-                </div>
+                <p>This is an example paragraph with an <a href="#" class="link-out-intext">in-text link</a>.</p>
             </section>
 
             <section class="element">
@@ -70,16 +68,21 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;
+                    &lt;div class="nav-button"&gt; <br>
+                        &lt;a class="nav-a" href="index.html"&gt;Home&lt;/a&gt;<br>
+                    &lt;/div&gt;
                 </code>
                 <h4>CSS selector:</h4>
                 <code>
                     &lt;a&gt; <br>
-                    .nav-button
+                    .nav-button <br>
+                    .nav-a
                 </code>
 
                 <h4>Rendered element:</h4>
-                <a class="nav-button" href="#">Default Button</a>
+                <div class="nav-button">
+                    <a class="nav-a" href="index.html">Home</a>
+                </div>
 
             </section>
 
@@ -111,7 +114,7 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                    &lt;h1 class="p-title"&gt;Heading 1&lt;/h1&gt;<br>
                     &lt;h2 class="pro-subheader"&gt;Heading 2&lt;/h2&gt;<br>
                     &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
                     &lt;h4&gt;Heading 4&lt;/h4&gt;
@@ -119,16 +122,18 @@
                 <h4>CSS selector:</h4>
                 <code>
                     &lt;h1&gt; <br>
-                    &lt;h2&gt; <br>
-                    &lt;h3&gt; <br>
+                    &lt;h2 class="pro-subheader"&gt; <br>
+                    &lt;h3 class="timeframe"&gt; <br>
                     &lt;h4&gt; <br>
-                    .pro-subheader
+                    .pro-subheader <br>
+                    .p-title <br>
+                    .timeframe
                 </code>
 
                 <h4>Rendered element:</h4>
-                <h1>Heading 1</h1>
+                <h1 class="p-title">Heading 1</h1>
                 <h2 class="pro-subheader">Heading 2</h2>
-                <h3>Heading 3</h3>
+                <h3 class="timeframe">Heading 3</h3>
                 <h4>Heading 4</h4>
             </section>
 
@@ -183,8 +188,6 @@
             <h4>CSS selector:</h4>
             <code>
                 &lt;nav&gt; <br>   
-                .nav-right <br>
-                .nav-left <br>
                 .nav-button <br>
                 .nav-a <br>
                 .nav-logo 
@@ -248,27 +251,23 @@
             <h4>Rendered element:</h4>
 
             <div class="flex-container">
-                <div class="pro-holder">
-                    <a href="p1.html">
-                        <figure class="pro">
-                            <img class="preview" src="img/p1.png">
-                            <figcaption class="pro-name">
-                                <h5>Project 1 - Name 1</h5>    
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-
-                <div class="pro-holder">
-                    <a href="p2.html">
-                        <figure class="pro">
-                            <img class="preview" src="img/p2.png">
-                            <figcaption class="pro-name">
-                                <h5>Project 2 - Name 2</h5>    
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+                <a href="mobile-app-design.html">
+                    <figure class="pro pro-holder">
+                        <img class="preview border-red" src="img/projects/p2-img/final-mockup.png" alt="Project 2 preview">
+                        <figcaption class="pro-name pro-name-alt">
+                            <h5>Mobile App Design - Graphic Design & Prototyping</h5>    
+                        </figcaption>
+                    </figure>
+                </a>
+                
+                <a href="company-website.html">
+                    <figure class="pro pro-holder">
+                        <img class="preview border-red" src="img/projects/p1-img/home-final.png" alt="Project 1 preview">
+                        <figcaption class="pro-name pro-name-alt">
+                            <h5>Company Website - Front-end Coding</h5>    
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
         </section>  
 
@@ -287,11 +286,11 @@
     <footer>
         <h3>Citations:</h4>
         <ul>
-            <li>Tutorial used for embing a PDF Document in HTML from <a href="https://www.codexworld.com/embed-pdf-document-file-in-html-web-page/">CodexWorld</a></li>
-            <li><a href="//https://stackoverflow.com/questions/22750531/how-to-have-items-hidden-by-default-then-shown-with-jquery-button">Hide content with JQuery</a></li>
-            <li><a href="https://notlaura.com/show-title-hovering-image/">Tutorial for hover imgae text</a></li>
-            <li><a href="https://stackoverflow.com/questions/17937414/send-email-from-html-form-without-php">Contact form tutorial</a></li>
-            <li><a href="https://www.w3schools.com/w3css/w3css_slideshow.asp">W3 - Slide whow tutorial</a></li>
+            <li><a href="https://www.codexworld.com/embed-pdf-document-file-in-html-web-page/" target="_blank">Embing a PDF in HTML</a></li>
+            <li><a href="//https://stackoverflow.com/questions/22750531/how-to-have-items-hidden-by-default-then-shown-with-jquery-button" target="_blank">Hide content with JQuery</a></li>
+            <li><a href="https://notlaura.com/show-title-hovering-image/" target="_blank">Tutorial for hover imgae text</a></li>
+            <li><a href="https://stackoverflow.com/questions/17937414/send-email-from-html-form-without-php" target="_blank">Contact form tutorial</a></li>
+            <li><a href="https://www.w3schools.com/w3css/w3css_slideshow.asp" target="_blank">Slide show tutorial</a></li>
         </ul>
     </footer>
 </html>
