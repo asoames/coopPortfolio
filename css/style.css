@@ -1,7 +1,3 @@
-/*MAIN*/
-
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
-
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -139,12 +135,18 @@ figure.artifact{
     font-style: italic; 
 }
 
+.timeframe{
+    font-size: 1rem;
+    margin-bottom: -0.8rem;
+}
+
+.mySlides {display:none;}
 
 /*HEADER*/
 
 .logo-image{
     height: 4rem;
-    background-color: none;
+    /*background-color: none;*/
 }
 
 header{
