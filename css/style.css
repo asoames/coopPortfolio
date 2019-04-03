@@ -91,9 +91,9 @@ code {
     color: ##23272A;
 }
 
-.cst-list{
+/*.cst-list{
 
-}
+}*/
 
 .sub-list{
     list-style-type: lower-alpha;
@@ -110,6 +110,8 @@ code {
     border-color: #8C0000;
     border-radius: 10px;
     /*padding-bottom: 1rem;*/
+/*    width: 100%; sort of fixes it, broken in a diffrent way
+    height: 100%;*/
 }
 
 .border-red-ext{
@@ -145,6 +147,8 @@ figure.artifact{
     margin: 0;
     padding: 0;
     /*border: 0;*/
+/*    width: 100%;
+    height: 100%;*/
 }
 
 .link-out-intext{

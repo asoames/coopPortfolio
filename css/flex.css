@@ -29,7 +29,7 @@
   flex-direction: 1;
 }
 
-@media screen and (max-width: 68.5rem){
+@media screen and (max-width: 68.5rem){ /*switch to px?*/
   .flex-item{
     width: 90%;
   }
