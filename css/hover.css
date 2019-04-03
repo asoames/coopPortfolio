@@ -4,9 +4,9 @@
     position: relative;
 }
 
-    .pro:first-child{
+/*    .pro:first-child{
         margin-right: 2.762430939%;
-    }
+    }*/
 
 .pro img{
     width: 100%;
@@ -36,16 +36,3 @@
         text-align: center;
     }
 
-
-/*h3.timeframe{
-    color: #8C0000;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-style: italic;
-    font-size: 1rem;
-}
-
-p.timeframe{
-    margin-top: 0.2rem;
-}*/

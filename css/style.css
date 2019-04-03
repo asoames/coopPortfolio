@@ -19,6 +19,7 @@ p{
 .artifact-img{
     width: 100%;
     height: 100%;
+    margin-top: 4px;
 }
 
 .p-title{
@@ -98,10 +99,6 @@ code {
     list-style-type: lower-alpha;
 }
 
-/*.nav-title{
-    text-align: center;
-}*/
-
 .p-all-title{
     text-align: center;
 }
@@ -112,7 +109,7 @@ code {
     border-style: solid; 
     border-color: #8C0000;
     border-radius: 10px;
-    padding-bottom: 1rem;
+    /*padding-bottom: 1rem;*/
 }
 
 .border-red-ext{
@@ -125,26 +122,29 @@ code {
 }
 
 .pro-cap{
-    position: relative;
+  /*  position: relative;
     top: -1.4rem;
-    left: 0.2rem;
-    border-radius: 5px;
+    left: 0.2rem;*/
+    /*border-radius: 5px;*/
     background-color: #2C2F33;
     color: white;
     padding: 0.1rem;
-    padding-left: 0.3rem;
+    /*padding-left: 0.3rem;*/
     margin: 0;
     border: 0;
     font-size: 0.8rem;
-    width: 99.4%;
+    width: 100%;
     font-style: italic;
     opacity: 0.8;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
 }
 
 figure.artifact{
     margin: 0;
     padding: 0;
-    border: 0;
+    /*border: 0;*/
 }
 
 .link-out-intext{
@@ -166,6 +166,7 @@ figure.artifact{
     display:none;
 /*    width: 100%;
     height: 100%;*/
+    /*margin: 3px;*/
 }
 
 /*HEADER*/
