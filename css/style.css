@@ -1,3 +1,7 @@
+/*MAIN*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -19,7 +23,6 @@ p{
 .artifact-img{
     width: 100%;
     height: 100%;
-    margin-top: 4px;
 }
 
 .p-title{
@@ -44,7 +47,7 @@ p{
 
 .c-notBlack{
 	display: block;
-	background-color: #23272A;
+	background-color: #2C2F33;
 	color: white;
     padding: 2rem 0;
     text-align: center;
@@ -61,18 +64,7 @@ p{
     text-align: center;
     color: white;
     padding: 2rem 0;
-    text-align: center;
-}
-
-.c-justGray{
-    display: block;
-    background-color: #808080;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
+    text-align: center
 }
 
 code {
@@ -88,15 +80,18 @@ code {
 
 .inline-title{
     display: inline;
-    color: ##23272A;
 }
 
-/*.cst-list{
+.cst-list{
 
-}*/
+}
 
 .sub-list{
     list-style-type: lower-alpha;
+}
+
+.nav-title{
+    text-align: center;
 }
 
 .p-all-title{
@@ -109,78 +104,109 @@ code {
     border-style: solid; 
     border-color: #8C0000;
     border-radius: 10px;
-    /*padding-bottom: 1rem;*/
-/*    width: 100%; sort of fixes it, broken in a diffrent way
-    height: 100%;*/
-}
-
-.border-red-ext{
-    border-style: solid; 
-    border-color: #8C0000;
-    border-radius: 10px;
-    
-    padding: 0;
-    margin: 0;
+    padding-bottom: 1rem;
 }
 
 .pro-cap{
-  /*  position: relative;
+    position: relative;
     top: -1.4rem;
-    left: 0.2rem;*/
-    /*border-radius: 5px;*/
+    left: 0.2rem;
+    border-radius: 5px;
     background-color: #2C2F33;
     color: white;
     padding: 0.1rem;
-    /*padding-left: 0.3rem;*/
+    padding-left: 0.3rem;
     margin: 0;
     border: 0;
     font-size: 0.8rem;
-    width: 100%;
+    width: 99.4%;
     font-style: italic;
     opacity: 0.8;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-}
 }
 
 figure.artifact{
     margin: 0;
     padding: 0;
-    /*border: 0;*/
-/*    width: 100%;
-    height: 100%;*/
+    border: 0;
+}
+
+/*HOVER*/
+
+.pro{
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+    .pro:first-child{
+        /*margin-right: 2.762430939%;*/
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+.pro img{
+    width: 100%;
+}
+
+.pro:hover .pro-name{
+    opacity: 0.5;
+}
+
+.pro:hover .pro-name-alt{
+    opacity: 0.7;
+}
+
+.pro-name{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    background-color: #333;
+    transition: all 0.5s ease;
+}
+
+    .pro-name h5{
+        position: absolute;
+        color: #fff;
+        top: 33%;
+        width: 100%;
+        text-align: center;
+    }
+
+h3.timeframe{
+    color: #8C0000;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+p.timeframe{
+    margin-top: 0.2rem;
 }
 
 .link-out-intext{
-    /*text-decoration: none;*/
-    color: #CD0000; 
+    text-decoration: none;
+    color: #CD0000;
 }
 
 .link-out-intext:hover, .link-out-intext:focus{
     font-style: italic; 
 }
 
-.timeframe{
-    font-size: 1rem;
-    margin-bottom: -0.8rem;
-    color: #23272A;
-}
-
-.mySlides{
-    display:none;
-/*    width: 100%;
-    height: 100%;*/
-    /*margin: 3px;*/
-}
-
 /*HEADER*/
 
 .logo-image{
     height: 4rem;
+    background-color: none;
 }
 
 header{
-    background-color: #808080;
+    background-color: grey;
     margin: 0;
     padding-bottom: 0.5rem;
 }
@@ -231,20 +257,81 @@ header{
 }
 
 nav{
+/*  margin: auto;
+    width: 50%;*/
     text-align: center;
 }
 
-
-
-@media screen and (max-width: 40rem){
+/*.nav-container{
     
+}*/
+
+/*@media screen and (max-width: 40rem){
+    
+}*/
+
+/*ABOUT*/
+
+/*#button-to-show{
+    
+}*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit], #button-to-show{
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 0 0.3rem 0.6rem;
+  text-align: center;
+  background-color: #8C0000;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  font-size: 0.875rem;
+  font-weight: bold; 
+  color: white;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover, #button-to-show:hover{
+  background-color: #2C2F33;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 
 
+footer{
+    width: 10%;
+}
 
-/*--------------------------------------------*/
+p.sg{
+    background-color: grey;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+}
 
-.u{
-    padding: 0.7rem;
+p.sg a{
+    color: white;
+    text-decoration: underline;
 }

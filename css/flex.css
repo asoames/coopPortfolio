@@ -3,16 +3,14 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
-/*  margin: 0;
-  padding: 0;
-  border: 0;*/
 }
 
 .pro-holder img{
-  max-height: 30rem;
+  max-height: 25rem; /*30*/
   width: auto;
 }
+
+/*-------------------------------------------*/
 
 .flex-container-p{
 	display: flex;
@@ -29,7 +27,7 @@
   flex-direction: 1;
 }
 
-@media screen and (max-width: 68.5rem){ /*switch to px?*/
+@media screen and (max-width: 68.5rem){
   .flex-item{
     width: 90%;
   }
