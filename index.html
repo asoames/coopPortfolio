@@ -1,18 +1,9 @@
 <!-- 
 Notes - Due Apr.9:
--Imgs smaller, WHY?
--Add red to titles/subtitles
--Match logo
-	-Red soft shapes with black angular shapes inside
-	-Background colour for contact me form not good 
 -Update style guide
-
--De-link ...-alt pages
--Delete ...-img-alt & fonts folders
--Update Origami file
+-Delete unneeded files
+-Update Origami file & resume
 -->
-
-
 
 <!doctype html>
 <html lang="en">
@@ -23,7 +14,6 @@ Notes - Due Apr.9:
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/hover.css">
 		<link rel="stylesheet" href="css/flex.css">
 		<link rel="stylesheet" href="css/fonts.css">
 
@@ -55,30 +45,38 @@ Notes - Due Apr.9:
 			</nav>
 		</header>
 
-		<h1 class="p-all-title">Alex Soames</h1>
+		<h1 class="p-all-title amaz">Alex Soames</h1>
 
 		<section id="projects">
 			<div class="flex-container">
-	            <a href="mobile-app-design.html">
-	            <!-- <a href="p2-alt.html"> -->
+	            <a href="p2.html">
 	                <figure class="pro pro-holder">
-				        <img class="border-red-ext" src="img/projects/p2-img/final-mockup.png" alt="Project 2 preview">
-				        <figcaption class="pro-name">
-				            <h5>Mobile App Design | Graphic Design & Prototyping</h5>    
+
+				        <img class="preview border-red" src="img/projects/p2-img/final-mockup.png" alt="Project 2 preview">
+				        
+				    <!--     <img src="img/projects/p2-img/preLoad-final-mockup.jpg" data-src="img/projects/p2-img/final-mockup.png" class="lazyload blur" alt="Mobile app design project preview" class="preview border-red">
+						<noscript>
+							<img src="img/projects/p2-img/final-mockup.png" alt="Mobile app design project preview" class="preview border-red">
+						</noscript>
+						<script src="js/lazysizes.min.js"></script> -->
+
+				        <figcaption class="pro-name pro-name-alt">
+				            <h5>Mobile App Design - Graphic Design & Prototyping</h5>    
 				        </figcaption>
 	    			</figure>
 	            </a>
-	            
-	            <a href="company-website.html">
-	            <!-- <a href="p1-alt.html"> -->
+	            <a href="p1.html">
 	                <figure class="pro pro-holder">
-				        <img class="border-red-ext" src="img/projects/p1-img/home-final.png" alt="Project 1 preview">
-				        <figcaption class="pro-name">
-				            <h5>Company Website | Front-end Coding</h5>    
+				        <img class="preview border-red" src="img/projects/p1-img/home-final.png" alt="Project 1 preview">
+				        <figcaption class="pro-name pro-name-alt">
+				            <h5>Company Website - Front-end Coding</h5>    
 				        </figcaption>
 	    			</figure>
 	            </a>
 	        </div>
 		</section>			
 	</body>
+	<footer>
+		<p class="sg">Style Guide <a href="style-guide.html" class="link-out-intext">link</a></p>
+	</footer>
 </html>
