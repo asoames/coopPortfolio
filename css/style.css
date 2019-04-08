@@ -13,7 +13,7 @@ body {
 }
 
 p{
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .p-limit{
@@ -26,8 +26,8 @@ p{
 }
 
 .p-title{
-	padding-left: 2rem;
-	text-align: center;
+    padding-left: 2rem;
+    text-align: center;
 }
 
 .colour {
@@ -35,9 +35,9 @@ p{
 }
 
 .c-red{
-	display: block;
-	background-color: #8C0000;
-	color: white;
+    display: block;
+    background-color: #8C0000;
+    color: white;
     padding: 2rem 0;
     text-align: center;
     color: white;
@@ -46,9 +46,9 @@ p{
 }
 
 .c-notBlack{
-	display: block;
-	background-color: #2C2F33;
-	color: white;
+    display: block;
+    background-color: #2C2F33;
+    color: white;
     padding: 2rem 0;
     text-align: center;
     color: white;
@@ -57,9 +57,9 @@ p{
 }
 
 .c-otherRed{
-	display: block;
-	background-color: #CD0000;
-	color: white;
+    display: block;
+    background-color: #CD0000;
+    color: white;
     padding: 2rem 0;
     text-align: center;
     color: white;
@@ -75,16 +75,16 @@ code {
 }
 
 .pro-subheader{
-	color: #8C0000;
+    color: #8C0000;
 }
 
 .inline-title{
     display: inline;
 }
 
-.cst-list{
+/*.cst-list{
 
-}
+}*/
 
 .sub-list{
     list-style-type: lower-alpha;
@@ -105,6 +105,12 @@ code {
     border-color: #8C0000;
     border-radius: 10px;
     padding-bottom: 1rem;
+}
+
+.border-red-gal{
+    border-style: solid; 
+    border-color: #8C0000;
+    border-radius: 10px;
 }
 
 .pro-cap{
@@ -148,11 +154,11 @@ figure.artifact{
     width: 100%;
 }
 
-.pro:hover .pro-name{
+.pro:hover .pro-name .pro:focus .pro-name{
     opacity: 0.5;
 }
 
-.pro:hover .pro-name-alt{
+.pro:hover .pro-name-alt, .pro:focus .pro-name-alt{
     opacity: 0.7;
 }
 
@@ -166,6 +172,7 @@ figure.artifact{
     opacity: 0;
     background-color: #333;
     transition: all 0.5s ease;
+    border-radius: 10px;
 }
 
     .pro-name h5{
@@ -175,6 +182,7 @@ figure.artifact{
         width: 100%;
         text-align: center;
     }
+
 
 h3.timeframe{
     color: #8C0000;
@@ -209,6 +217,11 @@ header{
     background-color: grey;
     margin: 0;
     padding-bottom: 0.5rem;
+
+/*    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;*/
 }
 
 .nav-button {
@@ -257,24 +270,14 @@ header{
 }
 
 nav{
-/*  margin: auto;
-    width: 50%;*/
     text-align: center;
 }
 
-/*.nav-container{
+@media screen and (max-width: 40rem){
     
-}*/
-
-/*@media screen and (max-width: 40rem){
-    
-}*/
+}
 
 /*ABOUT*/
-
-/*#button-to-show{
-    
-}*/
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], input[type=email], select, textarea {
@@ -318,6 +321,9 @@ input[type=submit]:hover, #button-to-show:hover{
 }
 
 
+
+
+/*FOR IAT 339*/
 
 footer{
     width: 10%;
