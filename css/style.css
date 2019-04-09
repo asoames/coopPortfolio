@@ -210,7 +210,6 @@ p.timeframe{
 
 .logo-image{
     height: 4rem;
-    background-color: none;
 }
 
 header{
@@ -320,7 +319,14 @@ input[type=submit]:hover, #button-to-show:hover{
   padding: 20px;
 }
 
+.pdf-show{
+    width: 100%;
+    height: 1080px;
+}
 
+li.bot-spacer{
+    margin-bottom: 1rem;
+}
 
 
 /*FOR IAT 339*/

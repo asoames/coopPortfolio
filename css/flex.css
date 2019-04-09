@@ -5,18 +5,17 @@
   justify-content: center;
 }
 
-.pro-holder img{
-  max-height: 25rem; /*30*/
-  width: auto;
+
+.pro-holder{
+  width: 48.5%;
+  height: auto;
+  margin: 0.5rem;
 }
 
-/*-------------------------------------------*/
-
 .flex-container-p{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	/*align-items: flex-start;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -24,11 +23,14 @@
   width: 48.5%;
   height: auto;
   margin: 0.5rem;
-  flex-direction: 1;
 }
 
 @media screen and (max-width: 68.5rem){
   .flex-item{
+    width: 90%;
+  }
+
+  .pro-holder{
     width: 90%;
   }
   
