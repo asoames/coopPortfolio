@@ -82,10 +82,6 @@ code {
     display: inline;
 }
 
-/*.cst-list{
-
-}*/
-
 .sub-list{
     list-style-type: lower-alpha;
 }
@@ -97,8 +93,6 @@ code {
 .p-all-title{
     text-align: center;
 }
-
-
 
 .border-red{
     border-style: solid; 
@@ -346,4 +340,8 @@ p.sg{
 p.sg a{
     color: white;
     text-decoration: underline;
+}
+
+footer.style-footer{
+    width: auto;
 }

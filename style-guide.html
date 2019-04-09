@@ -51,19 +51,16 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;div class="red-bg"&gt;<br>
-                        &lt;p&gt;This is an example paragraph with an &lt;a href="#" class="link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;<br>
-                    &lt;/div&gt;
+                    This is an in-text &lt;a href="#" class="link-out-intext"&gt;in-text link&lt;/a&gt;.
                 </code>
                 <h4>CSS selector:</h4>
                 <code>
-                    &lt;a&gt;<br>
-                    .red-bg
+                    &lt;a&gt;
                 </code>
 
                 <h4>Rendered element:</h4>
                 <div class="red-bg">
-                    <p>This is an example paragraph with an <a href="#">in-text link</a>.</p>
+                    <p>This is an in-text <a href="#" class="link-out-intext">link</a>.</p>
                 </div>
             </section>
 
@@ -72,17 +69,22 @@
                 <h3>Navigation Link</h3>
 
                 <h4>Sample code:</h4>
-                <code>
-                    &lt;a href="#" class="nav-button"&gt;Default Button&lt;/a&gt;
-                </code>
+                <code><pre>
+&lt;div class="nav-button"&gt;
+    &lt;a class="nav-a" href="index.html"&gt;Nav Button&lt;/a&gt;
+&lt;/div&gt;</pre></code>
+
                 <h4>CSS selector:</h4>
                 <code>
                     &lt;a&gt; <br>
-                    .nav-button
+                    .nav-button <br>
+                    .nav-a
                 </code>
 
                 <h4>Rendered element:</h4>
-                <a class="nav-button" href="#">Default Button</a>
+                <div class="nav-button">
+                    <a class="nav-a" href="index.html">Nav Button</a>
+                </div>
 
             </section>
 
@@ -90,18 +92,25 @@
                 <h3>Image as a Link</h3>
 
                 <h4>Sample code:</h4>
-                <code>
-                    &lt;a href="#"&gt;&lt;img src="img/newegg_ca.jpeg" class="logo" alt="Newegg Canada"&gt;&lt;/a&gt;
-                </code>
+                <code><pre>
+&lt;div class="nav-logo"&gt;
+    &lt;a class="nav-a" href="index.html"&gt;
+        &lt;img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</pre></code>
+
                 <h4>CSS selector:</h4>
                 <code>
-                    &lt;a&gt; <br>
-                    &lt;img&gt; <br>
-                    .img-link
+                    .nav-logo <br>
+                    .nav-a
                 </code>
 
                 <h4>Rendered element:</h4>
-                <a href="https://www.soames.ca/"><img src="img/as-logo.png" class="img-link" alt="Alex Soames Logo"></a>
+                <div class="nav-logo">
+                    <a class="nav-a" href="index.html">
+                        <img class="logo-image" src="img/as-logo.png" alt="Alex Soames Logo" />
+                    </a>
+                </div>
             </section>
 
         </section>
@@ -114,10 +123,10 @@
 
                 <h4>Sample code:</h4>
                 <code>
-                    &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
-                    &lt;h2 class="pro-subheader"&gt;Heading 2&lt;/h2&gt;<br>
-                    &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
-                    &lt;h4&gt;Heading 4&lt;/h4&gt;
+                    &lt;h1 class="p-title amaz"&gt;Heading 1&lt;/h1&gt;<br>
+                    &lt;h2 class="pro-subheader amaz"&gt;Heading 2&lt;/h2&gt;<br>
+                    &lt;h3 class="timeframe"&gt;Heading 3&lt;/h3&gt;<br>
+                    &lt;h4 class="inline-title"&gt;Heading 4&lt;/h4&gt;
                 </code>
                 <h4>CSS selector:</h4>
                 <code>
@@ -125,14 +134,18 @@
                     &lt;h2&gt; <br>
                     &lt;h3&gt; <br>
                     &lt;h4&gt; <br>
-                    .pro-subheader
+                    .p-title <br>
+                    .pro-subheader <br>
+                    .timeframe <br>
+                    .inline-title <br>
+                    .amaz
                 </code>
 
                 <h4>Rendered element:</h4>
-                <h1>Heading 1</h1>
-                <h2 class="pro-subheader">Heading 2</h2>
-                <h3>Heading 3</h3>
-                <h4>Heading 4</h4>
+                <h1 class="p-title amaz">Heading 1</h1>
+                <h2 class="pro-subheader amaz">Heading 2</h2>
+                <h3 class="timeframe">Heading 3</h3>
+                <h4 class="inline-title">Heading 4</h4>
             </section>
 
             <section class="element">
@@ -142,6 +155,7 @@
                 <code>
                     &lt;p&gt;This is an example paragraph.&lt;/p&gt;
                 </code>
+
                 <h4>CSS selector:</h4>
                 <code>
                     &lt;p&gt; <br>   
@@ -186,8 +200,7 @@
             <h4>CSS selector:</h4>
             <code>
                 &lt;nav&gt; <br>   
-                .nav-right <br>
-                .nav-left <br>
+                &lt;a&gt; <br>
                 .nav-button <br>
                 .nav-a <br>
                 .nav-logo 
@@ -227,51 +240,74 @@
             <h4>Sample code:</h4>
             <code><pre>
 &lt;div class="flex-container"&gt;
-    &lt;div class="pro-holder"&gt;
-        &lt;a href="px.html"&gt;
-            &lt;figure class="pro"&gt;
-                &lt;img class="preview" src="img/px.png"&gt;
-                &lt;figcaption class="pro-name"&gt;
-                    &lt;h5&gt;Project X - Name X&lt;/h5&gt;   
-                &lt;/figcaption&gt;
-            &lt;/figure&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-            </pre></code>
+    &lt;a href="#" class="pro-holder"&gt;
+        &lt;figure class="pro "&gt;
+            
+            &lt;img src="img-20percent.jpg" data-src="img.png" class="lazyload blur border-red-gal" alt="Mobile app design project preview"&gt;
+            &lt;noscript&gt;
+                &lt;img src="img.png" alt="Mobile app design project preview" class="preview border-red-gal">
+            &lt;/noscript&gt;
+            &lt;script src="js/lazysizes.min.js"&gt;&lt;/script&gt;
+
+            &lt;figcaption class="pro-name pro-name-alt"&gt;
+                &lt;h5&gt;Mobile App Design - Graphic Design & Prototyping&lt;/h5&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</pre></code>
+
             <h4>CSS selector:</h4>
             <code>
+                &lt;a&gt; <br>
+                &lt;figure&gt; <br>
+                &lt;img&gt; <br>
+                &lt;a&gt; <br>
+                &lt;script&gt; <br>
+                &lt;noscript&gt; <br>
+                &lt;figcaption&gt; <br>
                 .flex-container <br>
                 .pro-holder <br>
                 .pro <br>
+                .lazyload <br>
+                .blur <br>
+                .border-red-gal <br>
                 .preview <br>
-                .pro-name 
+                .pro-name <br>
+                .pro-name-alt
             </code>
 
             <h4>Rendered element:</h4>
 
             <div class="flex-container">
-                <div class="pro-holder">
-                    <a href="p1.html">
-                        <figure class="pro">
-                            <img class="preview" src="img/p1.png">
-                            <figcaption class="pro-name">
-                                <h5>Project 1 - Name 1</h5>    
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+                <a href="p2.html" class="pro-holder">
+                    <figure class="pro">
+                        
+                        <img src="img/projects/p2-img/final-mockup-home-20percent.jpg" data-src="img/projects/p2-img/final-mockup-home.png" class="lazyload blur border-red-gal" alt="Mobile app design project preview">
+                        <noscript>
+                            <img src="img/projects/p2-img/final-mockup.png" alt="Mobile app design project preview" class="preview border-red-gal">
+                        </noscript>
+                        <script src="js/lazysizes.min.js"></script>
 
-                <div class="pro-holder">
-                    <a href="p2.html">
-                        <figure class="pro">
-                            <img class="preview" src="img/p2.png">
-                            <figcaption class="pro-name">
-                                <h5>Project 2 - Name 2</h5>    
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+                        <figcaption class="pro-name pro-name-alt">
+                            <h5>Mobile App Design - Graphic Design & Prototyping</h5>    
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="p1.html" class="pro-holder">
+                    <figure class="pro">
+
+                        <img src="img/projects/projects/p1-img/cart-final-tall-20percent.jpg" data-src="img/projects/p1-img/cart-final-tall.png" class="lazyload blur border-red-gal" alt="Company website project preview">
+                        <noscript>
+                            <img src="img/projects/p2-img/cart-final-tall.png" alt="Company website project preview" class="preview border-red-gal">
+                        </noscript>
+                        <script src="js/lazysizes.min.js"></script>
+                        
+                        <figcaption class="pro-name pro-name-alt">
+                            <h5>Company Website - Front-end Coding</h5>    
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
         </section>  
 
@@ -287,7 +323,7 @@
             <div class="c-notBlack"><p class="colour">Not Black - #2C2F33</p></div>
         </section>
     </body>
-    <footer>
+    <footer class="style-footer">
         <h3>Citations:</h4>
         <ul>
             <li>Tutorial used for embing a PDF Document in HTML from <a href="https://www.codexworld.com/embed-pdf-document-file-in-html-web-page/">CodexWorld</a></li>
